@@ -16,9 +16,9 @@ print(task1(ex))
 
 def task2(task1):
     vowels = ('A','E', 'I', 'O', 'U')
-    for c in task1(ex):
-        if c in vowels:
-            res = taskl(ex).replace(c, "*")
-    return res
-print(task2(task1))
+    for c in task1:
+        if c.upper() in vowels:
+            task1 = task1.replace(c, "*")
+    return task1
+print(task2)
 
