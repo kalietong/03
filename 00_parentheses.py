@@ -1,5 +1,5 @@
 
-ex = (input("type something "))
+ex = input("type something ")
 
 def task1(s):
     ret = ""
@@ -14,11 +14,20 @@ def task1(s):
     return ret
 print(task1(ex))
 
-def task2(task1):
+def task2(s):
+    word = task1(ex)
     vowels = ('A','E', 'I', 'O', 'U')
-    for c in task1:
-        if c.upper() in vowels:
-            task1 = task1.replace(c, "*")
-    return task1
-print(task2)
+    for vowels in vowels:
+            word = word.replace(vowels, "*")
+    return word
+print(task2(ex))
 
+def check_parentheses(ex):
+    word = task1(ex)
+    if word.count("(") == word.count(")"):
+        print("balanced? True")
+    else:
+        print("balanced? False")
+    return ""
+
+print(check_parentheses(ex))
