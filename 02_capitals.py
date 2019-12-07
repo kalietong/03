@@ -60,9 +60,10 @@ while True:
         print(key_list[val_list.index(x)])
     if x in list(states_capitals.keys()):
         print(states_capitals[x])
+    if x not in states_capitals.values() and states_capitals.keys():
+        if x != "Done":
+            print("Nil")
     if x == "Done":
         os._exit(0)
-    if x != states_capitals.values or states_capitals.keys:
-        print("nil")
         
 
